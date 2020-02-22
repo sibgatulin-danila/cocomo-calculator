@@ -22,6 +22,7 @@ class Ui_MainWindow(object):
         self.tabWidget.setAutoFillBackground(False)
         self.tabWidget.setTabPosition(QtWidgets.QTabWidget.North)
         self.tabWidget.setObjectName("tabWidget")
+
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.tab)
@@ -48,6 +49,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addWidget(self.pushButton)
         self.verticalLayout.addLayout(self.horizontalLayout_2)
         self.tabWidget.addTab(self.tab, "")
+        
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.tab_2)
@@ -77,6 +79,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.addWidget(self.pushButton_2)
         self.verticalLayout_2.addLayout(self.horizontalLayout_5)
         self.tabWidget.addTab(self.tab_2, "")
+
         self.tab_5 = QtWidgets.QWidget()
         self.tab_5.setObjectName("tab_5")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.tab_5)
