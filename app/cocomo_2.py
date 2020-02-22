@@ -14,13 +14,23 @@ class Cocomo2(QtWidgets.QMainWindow, cocomo_2.Ui_MainWindow):
         self.setupUi(self)  # Это нужно для инициализации нашего дизайна
 
         # Факторы масштаба
-        self.sf = [
+        self.SF = [
             [6.20, 4.96, 3.72, 2.48, 1.24, 0.00, ],
             [5.07, 4.05, 3.04, 2.03, 1.01, 0.00, ],
             [7.07, 5.65, 4.24, 2.83, 1.41, 0.00, ],
             [5.48, 4.38, 3.29, 2.19, 1.10, 0.00, ],
             [7.80, 6.24, 4.68, 3.12, 1.56, 0.00, ],
         ]
+
+        # Для предварительной оценки
+        self.A_1 = 2.94 
+
+        # Для детальной оценки
+        self.A_2 = 2.45 
+
+        self.B = 0.91
+        self.C = 3.67
+        self.D = 0.28
 
         self.pars_sf = {
             'par_1': 0,
@@ -277,7 +287,34 @@ class Cocomo2(QtWidgets.QMainWindow, cocomo_2.Ui_MainWindow):
 
     # подсчет результатов
     def getResult(self):
-       pass
+        size = self.spinBox.value()
+
+        sf = 0
+        for i in range(len(self.SF)):
+            sf += self.SF[i][self.pars_sf['par_' + str(i + 1)]]
+        e = self.B + 0.01 * sf
+
+        eaf_1 = 1
+        for i in range(len(self.pars_first)):
+            eaf_1 *= self.MT_FIRST[i][self.pars_first['par_' + str(i + 1)]]
+
+        eaf_2 = 1
+        for i in range(len(self.pars_second)):
+            eaf_2 *= self.MT_SECOND[i][self.pars_second['par_' + str(i + 1)]]
+        
+        # трудоёмкость
+        pm_1 = math.ceil(eaf_1 * self.A_1 * size ** e)
+        self.label_40.setText(str(pm_1))
+
+        pm_2 = math.ceil(eaf_2 * self.A_2 * size ** e)
+        self.label_59.setText(str(pm_2))
+        
+        # Время
+        sced_i_1 = len(self.MT_FIRST) - 1
+        sced_1 = self.MT_FIRST[sced_i_1][self.pars_first['par_' + str(sced_i_1 + 1)]]
+
+        sced_i_2 = len(self.MT_SECOND) - 1
+        sced_2 = self.MT_SECOND[sced_i_2][self.pars_second['par_' + str(sced_i_2 + 1)]]
 
 def main():
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
