@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>559</width>
-    <height>375</height>
+    <width>572</width>
+    <height>431</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,113 +17,20 @@
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QTabWidget" name="tabWidget">
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="tabPosition">
-       <enum>QTabWidget::North</enum>
-      </property>
       <property name="currentIndex">
-       <number>6</number>
+       <number>7</number>
       </property>
-      <widget class="QWidget" name="tab">
-       <attribute name="title">
-        <string>Уровень</string>
-       </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <spacer name="verticalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="text">
-           <string>Выберите уровень сложности проекта</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QComboBox" name="comboBox">
-          <item>
-           <property name="text">
-            <string>распространенный тип (organic projects)</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string> встроенный тип (embedded projects)</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>полунезависимый тип (semidetached projects)</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-        <item>
-         <spacer name="verticalSpacer">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <spacer name="horizontalSpacer">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton">
-            <property name="text">
-             <string>Далее</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="title">
-        <string>Хар. прод.</string>
+        <string>Объём</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_11">
-          <item>
-           <widget class="QLabel" name="label_12">
-            <property name="text">
-             <string>Характеристики продукта</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Объём продукта</string>
+          </property>
+         </widget>
         </item>
         <item>
          <spacer name="verticalSpacer_3">
@@ -133,7 +40,7 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>40</height>
+            <height>130</height>
            </size>
           </property>
          </spacer>
@@ -141,60 +48,14 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_4">
           <item>
-           <widget class="QLabel" name="label_8">
+           <widget class="QLabel" name="label_3">
             <property name="text">
-             <string/>
+             <string>Введите количество строк кода(в тыс.):</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_7">
-            <property name="text">
-             <string>Рейтинг</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
-          <item>
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>Требуемая надежность ПО</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="comboBox_2"/>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_9">
-          <item>
-           <widget class="QLabel" name="label_9">
-            <property name="text">
-             <string>Размер БД приложения</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="comboBox_3"/>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_10">
-          <item>
-           <widget class="QLabel" name="label_10">
-            <property name="text">
-             <string>Сложность продукта</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="comboBox_4"/>
+           <widget class="QSpinBox" name="spinBox"/>
           </item>
          </layout>
         </item>
@@ -206,13 +67,13 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>40</height>
+            <height>129</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
           <item>
            <spacer name="horizontalSpacer_2">
             <property name="orientation">
@@ -246,102 +107,329 @@
       </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
-        <string>Хар. а/о</string>
+        <string>Факторы масштаба</string>
        </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_4">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <widget class="QLabel" name="label_14">
+         <widget class="QLabel" name="label_6">
           <property name="text">
-           <string>Характеристики аппаратного обеспечения </string>
+           <string>Факторы масштаба</string>
           </property>
          </widget>
         </item>
         <item>
-         <spacer name="verticalSpacer_7">
+         <spacer name="verticalSpacer_5">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>69</height>
+            <height>63</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <layout class="QHBoxLayout" name="horizontalLayout_17">
           <item>
-           <widget class="QLabel" name="label_11">
+           <widget class="QLabel" name="label_18">
             <property name="text">
              <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_13">
-            <property name="text">
-             <string>Рейтинг</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_17">
-          <item>
            <widget class="QLabel" name="label_17">
             <property name="text">
-             <string> Ограничения быстродействия </string>
+             <string>Значимость фактора</string>
             </property>
            </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="comboBox_7"/>
           </item>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
           <item>
-           <widget class="QLabel" name="label_15">
+           <widget class="QLabel" name="label_5">
             <property name="text">
-             <string>Ограничения памяти </string>
+             <string> Наличие опыта аналогичных разработок </string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_5"/>
+           <widget class="QComboBox" name="comboBox_2">
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критический</string>
+             </property>
+            </item>
+           </widget>
           </item>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
           <item>
-           <widget class="QLabel" name="label_16">
+           <widget class="QLabel" name="label_7">
             <property name="text">
-             <string>Неустойчивость окружения ВМ</string>
+             <string>Гибкость процесса разработки</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_6"/>
+           <widget class="QComboBox" name="comboBox_3">
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критический</string>
+             </property>
+            </item>
+           </widget>
           </item>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_18">
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
           <item>
-           <widget class="QLabel" name="label_18">
+           <widget class="QLabel" name="label_8">
             <property name="text">
-             <string> Требуемое время восстановления </string>
+             <string>Архитектура и разрешение рисков </string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_8"/>
+           <widget class="QComboBox" name="comboBox_4">
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критический</string>
+             </property>
+            </item>
+           </widget>
           </item>
          </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Сработанность команды</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_5">
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критический</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>Зрелость процессов</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_6">
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критический</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>63</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="text">
+             <string>Далее</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>МТ(пердвар.)</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>Множители трудоёмкости</string>
+          </property>
+         </widget>
         </item>
         <item>
          <spacer name="verticalSpacer_8">
@@ -351,13 +439,375 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>52</height>
+            <height>34</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_18">
+          <item>
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_19">
+            <property name="text">
+             <string>Приоритет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>квалификация персонала </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_8">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>опыт персонала</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_10">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string> разработка для повторного использования</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_7">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
          <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string> сложность платформы разработки </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_9">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string> оборудование </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_11">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_19">
+          <item>
+           <widget class="QLabel" name="label_21">
+            <property name="text">
+             <string>требуемое выполнение графика работ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_12">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>33</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>После этого шага готова предварительная оценка: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>Перейти к оценке</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_15">
           <item>
            <spacer name="horizontalSpacer_4">
             <property name="orientation">
@@ -372,14 +822,14 @@
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_5">
+           <widget class="QPushButton" name="pushButton_6">
             <property name="text">
              <string>Назад</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_6">
+           <widget class="QPushButton" name="pushButton_7">
             <property name="text">
              <string>Далее</string>
             </property>
@@ -389,15 +839,15 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab_4">
+      <widget class="QWidget" name="tab">
        <attribute name="title">
-        <string>Персонал</string>
+        <string>МТ (Детал.)</string>
        </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_5">
+       <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QLabel" name="label_20">
+         <widget class="QLabel" name="label_26">
           <property name="text">
-           <string>Характеристики персонала</string>
+           <string>Параметры персонала</string>
           </property>
          </widget>
         </item>
@@ -409,25 +859,125 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>53</height>
+            <height>49</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <layout class="QHBoxLayout" name="horizontalLayout_23">
           <item>
-           <widget class="QLabel" name="label_23">
+           <widget class="QLabel" name="label_24">
             <property name="text">
              <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_24">
+           <widget class="QLabel" name="label_25">
             <property name="text">
-             <string>Рейтинг</string>
+             <string>Приоритет</string>
             </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_22">
+          <item>
+           <widget class="QLabel" name="label_23">
+            <property name="text">
+             <string>возможности аналитика</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_14">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_27">
+          <item>
+           <widget class="QLabel" name="label_29">
+            <property name="text">
+             <string>опыт разработки приложений</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_17">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
            </widget>
           </item>
          </layout>
@@ -437,68 +987,198 @@
           <item>
            <widget class="QLabel" name="label_22">
             <property name="text">
-             <string>Аналитические способности </string>
+             <string>возможности программиста</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_11"/>
+           <widget class="QComboBox" name="comboBox_13">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
           </item>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_23">
+         <layout class="QHBoxLayout" name="horizontalLayout_26">
           <item>
-           <widget class="QLabel" name="label_25">
+           <widget class="QLabel" name="label_28">
             <property name="text">
-             <string>Опыт разработки </string>
+             <string>продолжительность работы персонала</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_12"/>
+           <widget class="QComboBox" name="comboBox_16">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
           </item>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_20">
+         <layout class="QHBoxLayout" name="horizontalLayout_28">
           <item>
-           <widget class="QLabel" name="label_21">
+           <widget class="QLabel" name="label_30">
             <property name="text">
-             <string>Способности к разработке ПО </string>
+             <string>опыт работы с платформой</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_10"/>
+           <widget class="QComboBox" name="comboBox_18">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
           </item>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_19">
+         <layout class="QHBoxLayout" name="horizontalLayout_25">
           <item>
-           <widget class="QLabel" name="label_19">
+           <widget class="QLabel" name="label_27">
             <property name="text">
-             <string> Опыт использования виртуальных машин</string>
+             <string>опыт использования языка программирования и инструментальных средств</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_9"/>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_24">
-          <item>
-           <widget class="QLabel" name="label_26">
-            <property name="text">
-             <string>Опыт разработки на языках программирования</string>
-            </property>
+           <widget class="QComboBox" name="comboBox_15">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
            </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="comboBox_13"/>
           </item>
          </layout>
         </item>
@@ -510,144 +1190,13 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>37</height>
+            <height>49</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_22">
-          <item>
-           <spacer name="horizontalSpacer_5">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_7">
-            <property name="text">
-             <string>Назад</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_8">
-            <property name="text">
-             <string>Далее</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="tab_6">
-       <attribute name="title">
-        <string>Проект</string>
-       </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_6">
-        <item>
-         <widget class="QLabel" name="label_31">
-          <property name="text">
-           <string>Характеристики проекта</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="verticalSpacer_11">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>73</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_26">
-          <item>
-           <widget class="QLabel" name="label_27">
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="label_28">
-            <property name="text">
-             <string>Рейтинг</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_28">
-          <item>
-           <widget class="QLabel" name="label_30">
-            <property name="text">
-             <string> Применение методов разработки ПО</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="comboBox_15"/>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_27">
-          <item>
-           <widget class="QLabel" name="label_29">
-            <property name="text">
-             <string>Использование инструментария разработки ПО</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="comboBox_14"/>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_29">
-          <item>
-           <widget class="QLabel" name="label_32">
-            <property name="text">
-             <string> Требования соблюдения графика</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QComboBox" name="comboBox_16"/>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <spacer name="verticalSpacer_12">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>73</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_25">
+         <layout class="QHBoxLayout" name="horizontalLayout_24">
           <item>
            <spacer name="horizontalSpacer_6">
             <property name="orientation">
@@ -679,60 +1228,314 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab_7">
+      <widget class="QWidget" name="tab_5">
        <attribute name="title">
-        <string>бла</string>
+        <string>МТ (Детал.)</string>
        </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_7">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
-         <widget class="QLabel" name="label_36">
+         <widget class="QLabel" name="label_35">
           <property name="text">
-           <string>Еще важное уточнение</string>
+           <string>Параметры продукта</string>
           </property>
          </widget>
         </item>
         <item>
-         <spacer name="verticalSpacer_14">
+         <spacer name="verticalSpacer_12">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>112</height>
+            <height>63</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_32">
+         <layout class="QHBoxLayout" name="horizontalLayout_31">
           <item>
-           <widget class="QLabel" name="label_37">
+           <widget class="QLabel" name="label_33">
             <property name="text">
-             <string>Объем продукта(в тыс. строк кода):</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="spinBox"/>
+           <widget class="QLabel" name="label_34">
+            <property name="text">
+             <string>Приоритет</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
         <item>
-         <spacer name="verticalSpacer_13">
+         <layout class="QHBoxLayout" name="horizontalLayout_29">
+          <item>
+           <widget class="QLabel" name="label_31">
+            <property name="text">
+             <string>требуемая надежность программы</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_19">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_36">
+          <item>
+           <widget class="QLabel" name="label_39">
+            <property name="text">
+             <string>размер базы данных</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_24">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_34">
+          <item>
+           <widget class="QLabel" name="label_37">
+            <property name="text">
+             <string>сложность программы</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_22">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_30">
+          <item>
+           <widget class="QLabel" name="label_32">
+            <property name="text">
+             <string>требуемая возможность многократного использования</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_20">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_32">
+          <item>
+           <widget class="QLabel" name="label_36">
+            <property name="text">
+             <string>соответствие документации потребностям жизненного цикла</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_21">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_11">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>111</height>
+            <height>63</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_34">
+         <layout class="QHBoxLayout" name="horizontalLayout_33">
           <item>
            <spacer name="horizontalSpacer_7">
             <property name="orientation">
@@ -764,77 +1567,216 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab_5">
+      <widget class="QWidget" name="tab_6">
        <attribute name="title">
-        <string>Итог</string>
+        <string>МТ (Детал.)</string>
        </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_3">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
         <item>
-         <spacer name="verticalSpacer_5">
+         <widget class="QLabel" name="label_45">
+          <property name="text">
+           <string>Параметры платформы</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_13">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>114</height>
+            <height>91</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <layout class="QHBoxLayout" name="horizontalLayout_40">
           <item>
-           <widget class="QLabel" name="label_3">
+           <widget class="QLabel" name="label_43">
             <property name="text">
-             <string>Трудоёмкость(чел х месяц):</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_4">
+           <widget class="QLabel" name="label_44">
             <property name="text">
-             <string>1200</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_8">
-          <item>
-           <widget class="QLabel" name="label_5">
-            <property name="text">
-             <string>Время разработки в календарных месяцах:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="label_6">
-            <property name="text">
-             <string>2</string>
+             <string>Приоритет</string>
             </property>
            </widget>
           </item>
          </layout>
         </item>
         <item>
-         <spacer name="verticalSpacer_6">
+         <layout class="QHBoxLayout" name="horizontalLayout_43">
+          <item>
+           <widget class="QLabel" name="label_47">
+            <property name="text">
+             <string>ограничения времени выполнения</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_29">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_41">
+          <item>
+           <widget class="QLabel" name="label_46">
+            <property name="text">
+             <string>ограничения памяти</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_28">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_38">
+          <item>
+           <widget class="QLabel" name="label_41">
+            <property name="text">
+             <string>изменяемость платформы</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_26">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_14">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>114</height>
+            <height>91</height>
            </size>
           </property>
          </spacer>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <layout class="QHBoxLayout" name="horizontalLayout_42">
           <item>
-           <spacer name="horizontalSpacer_3">
+           <spacer name="horizontalSpacer_8">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -847,7 +1789,402 @@
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_4">
+           <widget class="QPushButton" name="pushButton_13">
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_14">
+            <property name="text">
+             <string>Далее</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>МТ (Детал.)</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_49">
+          <property name="text">
+           <string>Параметры проекта</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_15">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>91</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_47">
+          <item>
+           <widget class="QLabel" name="label_51">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_52">
+            <property name="text">
+             <string>Приоритет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_44">
+          <item>
+           <widget class="QLabel" name="label_48">
+            <property name="text">
+             <string>использование инструментальных программных средств</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_30">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_45">
+          <item>
+           <widget class="QLabel" name="label_50">
+            <property name="text">
+             <string>многоабонентская (удаленная) разработка</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_31">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_39">
+          <item>
+           <widget class="QLabel" name="label_42">
+            <property name="text">
+             <string>требуемое выполнение графика работ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_27">
+            <item>
+             <property name="text">
+              <string>Критически низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_16">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>91</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_46">
+          <item>
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_15">
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_16">
+            <property name="text">
+             <string>Далее</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>Итог</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_55">
+          <property name="text">
+           <string>Итог</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>65</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_20">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Трудоёмкость проекта(Предвар.):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_40">
+            <property name="text">
+             <string>333</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_49">
+          <item>
+           <widget class="QLabel" name="label_56">
+            <property name="text">
+             <string>Время разработки проекта(Предвар.):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_57">
+            <property name="text">
+             <string>111</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_17">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_50">
+          <item>
+           <widget class="QLabel" name="label_58">
+            <property name="text">
+             <string>трудоёмкость проекта (Детал.):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_59">
+            <property name="text">
+             <string>444</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_37">
+          <item>
+           <widget class="QLabel" name="label_54">
+            <property name="text">
+             <string>Время разработки проекта (Детал.):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_53">
+            <property name="text">
+             <string>222</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>65</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_48">
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_8">
             <property name="text">
              <string>Назад</string>
             </property>
@@ -861,6 +2198,7 @@
     </item>
    </layout>
   </widget>
+  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
