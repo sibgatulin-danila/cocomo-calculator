@@ -439,7 +439,7 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>34</height>
+            <height>20</height>
            </size>
           </property>
          </spacer>
@@ -467,7 +467,7 @@
           <item>
            <widget class="QLabel" name="label_12">
             <property name="text">
-             <string>квалификация персонала </string>
+             <string>Квалификация персонала </string>
             </property>
            </widget>
           </item>
@@ -517,7 +517,7 @@
           <item>
            <widget class="QLabel" name="label_15">
             <property name="text">
-             <string>опыт персонала</string>
+             <string>Опыт персонала</string>
             </property>
            </widget>
           </item>
@@ -563,16 +563,16 @@
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <layout class="QHBoxLayout" name="horizontalLayout_51">
           <item>
-           <widget class="QLabel" name="label_11">
+           <widget class="QLabel" name="label_60">
             <property name="text">
-             <string> разработка для повторного использования</string>
+             <string>Сложность и надёжность</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox_7">
+           <widget class="QComboBox" name="comboBox_25">
             <item>
              <property name="text">
               <string>Критически низкий</string>
@@ -583,6 +583,46 @@
               <string>Очень низкий</string>
              </property>
             </item>
+            <item>
+             <property name="text">
+              <string>Низкий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Средний</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Очень высокий</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Критически высокий</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string> Разработка для повторного использования</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_7">
             <item>
              <property name="text">
               <string>Низкий</string>
@@ -617,22 +657,12 @@
           <item>
            <widget class="QLabel" name="label_14">
             <property name="text">
-             <string> сложность платформы разработки </string>
+             <string> Сложность платформы разработки </string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_9">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Очень низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Низкий</string>
@@ -667,7 +697,7 @@
           <item>
            <widget class="QLabel" name="label_16">
             <property name="text">
-             <string> оборудование </string>
+             <string> Оборудование </string>
             </property>
            </widget>
           </item>
@@ -717,17 +747,12 @@
           <item>
            <widget class="QLabel" name="label_21">
             <property name="text">
-             <string>требуемое выполнение графика работ</string>
+             <string>Требуемое выполнение графика работ</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_12">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -748,16 +773,6 @@
               <string>Высокий</string>
              </property>
             </item>
-            <item>
-             <property name="text">
-              <string>Очень высокий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
-             </property>
-            </item>
            </widget>
           </item>
          </layout>
@@ -770,7 +785,7 @@
           <property name="sizeHint" stdset="0">
            <size>
             <width>20</width>
-            <height>33</height>
+            <height>19</height>
            </size>
           </property>
          </spacer>
@@ -887,17 +902,12 @@
           <item>
            <widget class="QLabel" name="label_23">
             <property name="text">
-             <string>возможности аналитика</string>
+             <string>Возможности аналитика</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_14">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -921,11 +931,6 @@
             <item>
              <property name="text">
               <string>Очень высокий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
              </property>
             </item>
            </widget>
@@ -937,17 +942,12 @@
           <item>
            <widget class="QLabel" name="label_29">
             <property name="text">
-             <string>опыт разработки приложений</string>
+             <string>Опыт разработки приложений</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_17">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -971,11 +971,6 @@
             <item>
              <property name="text">
               <string>Очень высокий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
              </property>
             </item>
            </widget>
@@ -987,17 +982,12 @@
           <item>
            <widget class="QLabel" name="label_22">
             <property name="text">
-             <string>возможности программиста</string>
+             <string>Возможности программиста</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_13">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1021,11 +1011,6 @@
             <item>
              <property name="text">
               <string>Очень высокий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
              </property>
             </item>
            </widget>
@@ -1037,17 +1022,12 @@
           <item>
            <widget class="QLabel" name="label_28">
             <property name="text">
-             <string>продолжительность работы персонала</string>
+             <string>Продолжительность работы персонала</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_16">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1071,11 +1051,6 @@
             <item>
              <property name="text">
               <string>Очень высокий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
              </property>
             </item>
            </widget>
@@ -1087,17 +1062,12 @@
           <item>
            <widget class="QLabel" name="label_30">
             <property name="text">
-             <string>опыт работы с платформой</string>
+             <string>Опыт работы с платформой</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_18">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1121,11 +1091,6 @@
             <item>
              <property name="text">
               <string>Очень высокий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
              </property>
             </item>
            </widget>
@@ -1137,17 +1102,12 @@
           <item>
            <widget class="QLabel" name="label_27">
             <property name="text">
-             <string>опыт использования языка программирования и инструментальных средств</string>
+             <string>Опыт использования языка программирования и инструментальных средств</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_15">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1171,11 +1131,6 @@
             <item>
              <property name="text">
               <string>Очень высокий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
              </property>
             </item>
            </widget>
@@ -1276,17 +1231,12 @@
           <item>
            <widget class="QLabel" name="label_31">
             <property name="text">
-             <string>требуемая надежность программы</string>
+             <string>Требуемая надежность программы</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_19">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1312,11 +1262,6 @@
               <string>Очень высокий</string>
              </property>
             </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
-             </property>
-            </item>
            </widget>
           </item>
          </layout>
@@ -1326,17 +1271,12 @@
           <item>
            <widget class="QLabel" name="label_39">
             <property name="text">
-             <string>размер базы данных</string>
+             <string>Размер базы данных</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_24">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1376,17 +1316,12 @@
           <item>
            <widget class="QLabel" name="label_37">
             <property name="text">
-             <string>сложность программы</string>
+             <string>Сложность программы</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_22">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1426,22 +1361,12 @@
           <item>
            <widget class="QLabel" name="label_32">
             <property name="text">
-             <string>требуемая возможность многократного использования</string>
+             <string>Требуемая возможность многократного использования</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_20">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Очень низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Низкий</string>
@@ -1476,17 +1401,12 @@
           <item>
            <widget class="QLabel" name="label_36">
             <property name="text">
-             <string>соответствие документации потребностям жизненного цикла</string>
+             <string>Соответствие документации потребностям жизненного цикла</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_21">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1510,11 +1430,6 @@
             <item>
              <property name="text">
               <string>Очень высокий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
              </property>
             </item>
            </widget>
@@ -1615,27 +1530,12 @@
           <item>
            <widget class="QLabel" name="label_47">
             <property name="text">
-             <string>ограничения времени выполнения</string>
+             <string>Ограничения времени выполнения</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_29">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Очень низкий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Средний</string>
@@ -1665,27 +1565,12 @@
           <item>
            <widget class="QLabel" name="label_46">
             <property name="text">
-             <string>ограничения памяти</string>
+             <string>Ограничения памяти</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_28">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Очень низкий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Средний</string>
@@ -1715,22 +1600,12 @@
           <item>
            <widget class="QLabel" name="label_41">
             <property name="text">
-             <string>изменяемость платформы</string>
+             <string>Изменяемость платформы</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_26">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Очень низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Низкий</string>
@@ -1749,11 +1624,6 @@
             <item>
              <property name="text">
               <string>Очень высокий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
              </property>
             </item>
            </widget>
@@ -1854,17 +1724,12 @@
           <item>
            <widget class="QLabel" name="label_48">
             <property name="text">
-             <string>использование инструментальных программных средств</string>
+             <string>Использование инструментальных программных средств</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_30">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1890,11 +1755,6 @@
               <string>Очень высокий</string>
              </property>
             </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
-             </property>
-            </item>
            </widget>
           </item>
          </layout>
@@ -1904,17 +1764,12 @@
           <item>
            <widget class="QLabel" name="label_50">
             <property name="text">
-             <string>многоабонентская (удаленная) разработка</string>
+             <string>Многоабонентская (удаленная) разработка</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_31">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1954,17 +1809,12 @@
           <item>
            <widget class="QLabel" name="label_42">
             <property name="text">
-             <string>требуемое выполнение графика работ</string>
+             <string>Требуемое выполнение графика работ</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_27">
-            <item>
-             <property name="text">
-              <string>Критически низкий</string>
-             </property>
-            </item>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -1988,11 +1838,6 @@
             <item>
              <property name="text">
               <string>Очень высокий</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Критически высокий</string>
              </property>
             </item>
            </widget>
@@ -2124,7 +1969,7 @@
           <item>
            <widget class="QLabel" name="label_58">
             <property name="text">
-             <string>трудоёмкость проекта (Детал.):</string>
+             <string>Трудоёмкость проекта (Детал.):</string>
             </property>
            </widget>
           </item>
