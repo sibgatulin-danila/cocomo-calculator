@@ -430,7 +430,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_24.addWidget(self.pushButton_10)
         self.verticalLayout.addLayout(self.horizontalLayout_24)
         self.tabWidget.addTab(self.tab, "")
-        
+
         self.tab_5 = QtWidgets.QWidget()
         self.tab_5.setObjectName("tab_5")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.tab_5)
@@ -758,7 +758,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Cocomo II"))
         self.label_4.setText(_translate("MainWindow", "Объём продукта"))
         self.label_3.setText(_translate("MainWindow", "Введите количество строк кода(в тыс.):"))
         self.pushButton_3.setText(_translate("MainWindow", "Назад"))
@@ -983,13 +983,13 @@ class Ui_MainWindow(object):
         self.pushButton_16.setText(_translate("MainWindow", "Далее"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("MainWindow", "МТ (Детал.)"))
         self.label_55.setText(_translate("MainWindow", "Итог"))
-        self.label_2.setText(_translate("MainWindow", "Трудоёмкость проекта(Предвар.):"))
+        self.label_2.setText(_translate("MainWindow", "Трудоёмкость проекта(чел. х мес.) (Предвар.):"))
         self.label_40.setText(_translate("MainWindow", "333"))
-        self.label_56.setText(_translate("MainWindow", "Время разработки проекта(Предвар.):"))
+        self.label_56.setText(_translate("MainWindow", "Время разработки проекта(мес.) (Предвар.):"))
         self.label_57.setText(_translate("MainWindow", "111"))
-        self.label_58.setText(_translate("MainWindow", "Трудоёмкость проекта (Детал.):"))
+        self.label_58.setText(_translate("MainWindow", "Трудоёмкость проекта(чел. х мес.) (Детал.):"))
         self.label_59.setText(_translate("MainWindow", "444"))
-        self.label_54.setText(_translate("MainWindow", "Время разработки проекта (Детал.):"))
+        self.label_54.setText(_translate("MainWindow", "Время разработки проекта(мес.) (Детал.):"))
         self.label_53.setText(_translate("MainWindow", "222"))
-        self.pushButton_8.setText(_translate("MainWindow", "Назад"))
+        self.pushButton_8.setText(_translate("MainWindow", "Выход"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), _translate("MainWindow", "Итог"))

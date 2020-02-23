@@ -3,7 +3,7 @@ sys.path.append(os.path.abspath(os.path.join('..', 'viewsPy')))
 from PyQt5 import QtWidgets
 import math
 import viewsPy.cocomo_2_view as cocomo_2
-
+import cocomo_welcome
 
 
 class Cocomo2(QtWidgets.QMainWindow, cocomo_2.Ui_MainWindow):
@@ -137,7 +137,7 @@ class Cocomo2(QtWidgets.QMainWindow, cocomo_2.Ui_MainWindow):
         self.pushButton_15.clicked.connect(self.prevTab)
         self.pushButton_16.clicked.connect(self.nextTab)
 
-        self.pushButton_8.clicked.connect(self.prevTab)
+        self.pushButton_8.clicked.connect(self.goMainWindow)
 
         # соединение селекторов с параметрами
         
@@ -315,6 +315,33 @@ class Cocomo2(QtWidgets.QMainWindow, cocomo_2.Ui_MainWindow):
 
         sced_i_2 = len(self.MT_SECOND) - 1
         sced_2 = self.MT_SECOND[sced_i_2][self.pars_second['par_' + str(sced_i_2 + 1)]]
+        
+        # трудоёмкость без sced 
+        eaf_1 = 1
+        for i in range(len(self.pars_first) - 1):
+            eaf_1 *= self.MT_FIRST[i][self.pars_first['par_' + str(i + 1)]]
+
+        eaf_2 = 1
+        for i in range(len(self.pars_second) - 1):
+            eaf_2 *= self.MT_SECOND[i][self.pars_second['par_' + str(i + 1)]]
+        
+        pm_1 = math.ceil(eaf_1 * self.A_1 * size ** e)
+        self.label_40.setText(str(pm_1))
+
+        pm_2 = math.ceil(eaf_2 * self.A_2 * size ** e)
+        self.label_59.setText(str(pm_2))
+
+        # Время разработки
+        tm_1 = round(sced_1 * self.C * pm_1 ** (self.D + 0.2 * (e - self.B)), 2)
+        self.label_57.setText(str(tm_1))
+        
+        tm_2 = round(sced_2 * self.C * pm_2 ** (self.D + 0.2 * (e - self.B)), 2)
+        self.label_53.setText(str(tm_2))
+
+    def goMainWindow(self):
+        self.mainWindow = cocomo_welcome.CocomoWelcome()
+        self.mainWindow.show()
+        self.close()
 
 def main():
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication

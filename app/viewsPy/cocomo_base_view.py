@@ -124,7 +124,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Cocomo (base)"))
         self.label.setText(_translate("MainWindow", "Выберите уровень сложности проекта"))
         self.comboBox.setItemText(0, _translate("MainWindow", "распространенный тип (organic projects)"))
         self.comboBox.setItemText(1, _translate("MainWindow", " встроенный тип (embedded projects)"))
@@ -139,5 +139,5 @@ class Ui_MainWindow(object):
         self.label_4.setText(_translate("MainWindow", "1200"))
         self.label_5.setText(_translate("MainWindow", "Время разработки в календарных месяцах:"))
         self.label_6.setText(_translate("MainWindow", "2"))
-        self.pushButton_4.setText(_translate("MainWindow", "Назад"))
+        self.pushButton_4.setText(_translate("MainWindow", "Выход"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MainWindow", "Итог"))

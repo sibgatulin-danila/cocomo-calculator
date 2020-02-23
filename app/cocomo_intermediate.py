@@ -3,7 +3,7 @@ sys.path.append(os.path.abspath(os.path.join('..', 'viewsPy')))
 from PyQt5 import QtWidgets
 import math
 import viewsPy.cocomo_intermediate_view as cocomo_intermediate
-
+import cocomo_welcome
 
 
 class CocomoIntermediate(QtWidgets.QMainWindow, cocomo_intermediate.Ui_MainWindow):
@@ -112,7 +112,7 @@ class CocomoIntermediate(QtWidgets.QMainWindow, cocomo_intermediate.Ui_MainWindo
         self.pushButton_11.clicked.connect(self.prevTab)
         self.pushButton_12.clicked.connect(self.nextTab)
 
-        self.pushButton_4.clicked.connect(self.prevTab)
+        self.pushButton_4.clicked.connect(self.goMainWindow)
 
         self.tabWidget.currentChanged.connect(self.checkTabIndex)
         
@@ -195,7 +195,10 @@ class CocomoIntermediate(QtWidgets.QMainWindow, cocomo_intermediate.Ui_MainWindo
         tm = round(c * pm ** d, 2)
         self.label_6.setNum(tm) 
 
-
+    def goMainWindow(self):
+        self.mainWindow = cocomo_welcome.CocomoWelcome()
+        self.mainWindow.show()
+        self.close()
 
 def main():
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
