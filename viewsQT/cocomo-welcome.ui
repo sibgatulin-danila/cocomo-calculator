@@ -102,9 +102,8 @@
     <item>
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Программу разработали два человека: 
-Шанченко А.
-Сибгатулин Д.
+       <string>Программу разработали: 
+© Шанченко А., Сибгатулин Д., Томск 2020 г.
 Контакты:
 email: sibgat.d.s@gmail.com</string>
       </property>
@@ -127,6 +126,7 @@ email: sibgat.d.s@gmail.com</string>
      <string>О программе</string>
     </property>
     <addaction name="action_3"/>
+    <addaction name="action"/>
     <addaction name="action_4"/>
    </widget>
    <addaction name="menu"/>
@@ -137,11 +137,19 @@ email: sibgat.d.s@gmail.com</string>
    </property>
   </action>
   <action name="action_3">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>Разработчики</string>
    </property>
   </action>
   <action name="action_4">
+   <property name="text">
+    <string>Лицензия</string>
+   </property>
+  </action>
+  <action name="action">
    <property name="text">
     <string>Справка</string>
    </property>

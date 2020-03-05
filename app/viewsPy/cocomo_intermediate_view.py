@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'cocomo-Intermediate.ui'
+# Form implementation generated from reading ui file 'cocomo-intermediate.ui'
 #
 # Created by: PyQt5 UI code generator 5.14.1
 #
@@ -22,7 +22,6 @@ class Ui_MainWindow(object):
         self.tabWidget.setAutoFillBackground(False)
         self.tabWidget.setTabPosition(QtWidgets.QTabWidget.North)
         self.tabWidget.setObjectName("tabWidget")
-
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.tab)
@@ -49,7 +48,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addWidget(self.pushButton)
         self.verticalLayout.addLayout(self.horizontalLayout_2)
         self.tabWidget.addTab(self.tab, "")
-
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.tab_2)
@@ -128,7 +126,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5.addWidget(self.pushButton_2)
         self.verticalLayout_2.addLayout(self.horizontalLayout_5)
         self.tabWidget.addTab(self.tab_2, "")
-
         self.tab_3 = QtWidgets.QWidget()
         self.tab_3.setObjectName("tab_3")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.tab_3)
@@ -214,7 +211,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_13.addWidget(self.pushButton_6)
         self.verticalLayout_4.addLayout(self.horizontalLayout_13)
         self.tabWidget.addTab(self.tab_3, "")
-
         self.tab_4 = QtWidgets.QWidget()
         self.tab_4.setObjectName("tab_4")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.tab_4)
@@ -316,7 +312,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_22.addWidget(self.pushButton_8)
         self.verticalLayout_5.addLayout(self.horizontalLayout_22)
         self.tabWidget.addTab(self.tab_4, "")
-
         self.tab_6 = QtWidgets.QWidget()
         self.tab_6.setObjectName("tab_6")
         self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.tab_6)
@@ -392,7 +387,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_25.addWidget(self.pushButton_10)
         self.verticalLayout_6.addLayout(self.horizontalLayout_25)
         self.tabWidget.addTab(self.tab_6, "")
-
         self.tab_7 = QtWidgets.QWidget()
         self.tab_7.setObjectName("tab_7")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.tab_7)
@@ -425,7 +419,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout_36.addWidget(self.pushButton_12)
         self.verticalLayout_7.addLayout(self.horizontalLayout_36)
         self.tabWidget.addTab(self.tab_7, "")
-        
         self.tab_5 = QtWidgets.QWidget()
         self.tab_5.setObjectName("tab_5")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.tab_5)
@@ -465,12 +458,26 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(3)
+        self.tabWidget.setCurrentIndex(0)
+        self.comboBox.setCurrentIndex(1)
+        self.comboBox_2.setCurrentIndex(2)
+        self.comboBox_18.setCurrentIndex(1)
+        self.comboBox_19.setCurrentIndex(2)
+        self.comboBox_20.setCurrentIndex(1)
+        self.comboBox_21.setCurrentIndex(1)
+        self.comboBox_11.setCurrentIndex(2)
+        self.comboBox_22.setCurrentIndex(2)
+        self.comboBox_23.setCurrentIndex(2)
+        self.comboBox_24.setCurrentIndex(2)
+        self.comboBox_25.setCurrentIndex(2)
+        self.comboBox_15.setCurrentIndex(2)
+        self.comboBox_26.setCurrentIndex(2)
+        self.comboBox_27.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Cocomo (intermediate)"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "Выберите уровень сложности проекта"))
         self.comboBox.setItemText(0, _translate("MainWindow", "распространенный тип (organic projects)"))
         self.comboBox.setItemText(1, _translate("MainWindow", " встроенный тип (embedded projects)"))
@@ -590,5 +597,5 @@ class Ui_MainWindow(object):
         self.label_4.setText(_translate("MainWindow", "1200"))
         self.label_5.setText(_translate("MainWindow", "Время разработки в календарных месяцах:"))
         self.label_6.setText(_translate("MainWindow", "2"))
-        self.pushButton_4.setText(_translate("MainWindow", "Выход"))
+        self.pushButton_4.setText(_translate("MainWindow", "Назад"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MainWindow", "Итог"))

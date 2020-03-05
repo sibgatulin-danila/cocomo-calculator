@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>445</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Лицензионное соглашение</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>425</width>
+         <height>262</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; font-weight:600; color:#333333;&quot;&gt;ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ на программное обеспечение&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;Настоящее лицензионное соглашение (далее &amp;quot;соглашение&amp;quot;) является юридическим документом, заключаемым между___________________________________(физическим или юридическим лицом, далее &amp;quot;Пользователь&amp;quot;) и _______________________________________  (далее &amp;quot;Автор&amp;quot;) относительно указанного выше программного продукта (далее &amp;quot;программа&amp;quot; или &amp;quot;программное обеспечение&amp;quot;), включающего в себя программное обеспечение, записанное на соответствующих носителях или на Web-сайте &amp;quot;Автора&amp;quot;, любые печатные материалы и любую &amp;quot;встроенную&amp;quot; или электронную документацию. Устанавливая, копируя или иным образом используя программу, Вы тем самым принимаете на себя условия настоящего соглашения. Если Вы не принимаете условий данного соглашения, то Вы не имеете права использовать данную программу и ее следует незамедлительно вернуть обратно продавцу и получить обратно уплаченные деньги.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;ЛИЦЕНЗИЯ НА ПРОГРАММУ&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;Программа  защищена законами и международными соглашениями об авторских правах, а также другими законами и договорами, регулирующими отношения авторского права. Программа лицензируется, а не продается.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;1. ОБЪЕМ ЛИЦЕНЗИИ.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;Настоящее соглашение дает вам нижеследующие права:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;1.1. Использование программы. Разрешается установка одновременно на одном компьютере программы или любой предыдущей версии. Основному пользователю компьютера, на котором установлена эта копия, разрешается также создание еще одной копии исключительно для своей работы на переносном компьютере.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;1.2. Хранение и использование в сети. Разрешается хранение, установка и запуск копии программы с общедоступного устройства хранения данных (например, сервера сети). При этом для каждого компьютера, на котором установлена или запущена с сервера сети данная программа, необходимо приобрести отдельную лицензию. Лицензия на программу не допускает совместного или одновременного использования программы на разных компьютерах в количестве более указанного в п. 1.1.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;2. ОПИСАНИЕ ПРОЧИХ ПРАВ И ОГРАНИЧЕНИЙ.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;2.1. Ограничения на вскрытие технологии, декомпиляцию и дизассемблирование. Не разрешается осуществлять вскрытие технологии, декомпиляцию и дизассемблирование программы, за исключением и только в той степени, в которой такие действия явно разрешены действующим законодательством, несмотря на наличие в соглашении данного ограничения.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;2.2. Разделение программы. Программа лицензируется как единое целое. Ее нельзя разделять на составляющие части для использования на нескольких компьютерах.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;2.3. Прокат. Не разрешается предоставлять программу в прокат или во временное пользование.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;2.4. Услуги по технической поддержке. Автор оказывает услуги по технической поддержке программных продуктов (далее &amp;quot;услуги по технической поддержке&amp;quot;). Обращение к Автору за технической поддержкой осуществляется по e-mail: _____________ , по телефону: ____________ или ICQ __________. Любые дополнительные программы и исходные тексты, переданные вам в результате оказания услуг по технической поддержке, должны рассматриваться как составная часть программы и подпадают, таким образом, под действие ограничений и условий данного соглашения. Технические данные, которые сообщаются службе технической поддержки в ходе обращения, могут быть использованы Автором для внутренних целей, включая техническую поддержку программных продуктов и разработку программного обеспечения. Автор не будет использовать данные сведения в форме, раскрывающей ваши личные сведения.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;2.5. Передача программы. Разрешается навсегда уступить все свои права по настоящему соглашению только вместе с продажей или передачей компьютера при условии, что Вы не сохраняете никаких копий, передаете всю программу (включая все составные части, носители и печатные материалы, любые обновления, настоящее соглашение и сертификаты подлинности, если таковые имеются), а получатель соглашается на условия данного соглашения. Если программа является обновлением (&amp;quot;upgrade&amp;quot;), то любая передача должна включать в себя все предыдущие версии программы.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;2.6. Прекращение действия соглашения. Без ущерба для любых других своих прав Автор может прекратить действие настоящего соглашения при несоблюдении условий и ограничений данного соглашения, что обяжет вас уничтожить все имеющиеся копии и составляющие части программы.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;3. АВТОРСКОЕ ПРАВО.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;3.1. Все права собственности и авторские права на программу (в том числе любые включенные в нее управляющие программы (applets), фотографии, анимации, видео- и звукозаписи, музыку и текст), компоненты ActiveX, сопровождающие ее печатные материалы и любые копии программы принадлежат Автору. Все права Автора на программу защищены законами и международными соглашениями об авторских правах, а также другими законами и договорами, регулирующими отношения авторского права. Следовательно, с программой необходимо обращаться, как с любым другим объектом авторского права, с тем лишь исключением, что программу разрешается установить на один компьютер и сохранить оригинал при условии, что он будет использоваться только как архив или резервная копия. Копирование сопровождающих программу печатных материалов запрещено.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;4. РАЗЛИЧНЫЕ НОСИТЕЛИ ПРОГРАММ. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;4.1. Программа может поставляться на нескольких видах носителей, а также по сети Internet исключительно с Web-сайта &amp;quot;Автора&amp;quot;. Независимо от их вида и емкости разрешается использовать только носители одного вида, который соответствует именно вашему компьютеру или серверу сети. Не разрешается производить установку с прочих носителей на другие компьютеры, предоставлять носители в прокат или во временное пользование или уступать их для использования в иных целях, за исключением случая полной передачи программного обеспечения, описанного выше.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman,serif'; font-size:12pt; color:#333333;&quot;&gt;  &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Принять</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

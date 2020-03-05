@@ -62,11 +62,15 @@ class Ui_MainWindow(object):
         self.action_2 = QtWidgets.QAction(MainWindow)
         self.action_2.setObjectName("action_2")
         self.action_3 = QtWidgets.QAction(MainWindow)
+        self.action_3.setCheckable(True)
         self.action_3.setObjectName("action_3")
-        # self.action_4 = QtWidgets.QAction(MainWindow)
-        # self.action_4.setObjectName("action_4")
+        self.action_4 = QtWidgets.QAction(MainWindow)
+        self.action_4.setObjectName("action_4")
+        self.action = QtWidgets.QAction(MainWindow)
+        self.action.setObjectName("action")
         self.menu.addAction(self.action_3)
-        # self.menu.addAction(self.action_4)
+        self.menu.addAction(self.action)
+        self.menu.addAction(self.action_4)
         self.menuBar.addAction(self.menu.menuAction())
 
         self.retranslateUi(MainWindow)
@@ -78,12 +82,12 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Cocomo base"))
         self.pushButton_2.setText(_translate("MainWindow", "Cocomo intermediate"))
         self.pushButton_3.setText(_translate("MainWindow", "Cocomo II"))
-        self.label.setText(_translate("MainWindow", "Программу разработали два человека: \n"
-"Шанченко А.\n"
-"Сибгатулин Д.\n"
+        self.label.setText(_translate("MainWindow", "Программу разработали: \n"
+"© Шанченко А., Сибгатулин Д., Томск 2020 г.\n"
 "Контакты:\n"
 "email: sibgat.d.s@gmail.com"))
         self.menu.setTitle(_translate("MainWindow", "О программе"))
         self.action_2.setText(_translate("MainWindow", "Справка"))
         self.action_3.setText(_translate("MainWindow", "Разработчики"))
-        # self.action_4.setText(_translate("MainWindow", "Справка"))
+        self.action_4.setText(_translate("MainWindow", "Лицензия"))
+        self.action.setText(_translate("MainWindow", "Справка"))

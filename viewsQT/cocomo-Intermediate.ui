@@ -24,7 +24,7 @@
        <enum>QTabWidget::North</enum>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -53,6 +53,9 @@
         </item>
         <item>
          <widget class="QComboBox" name="comboBox">
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
           <item>
            <property name="text">
             <string>распространенный тип (organic projects)</string>
@@ -167,6 +170,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_2">
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -207,6 +213,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_18">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
             <item>
              <property name="text">
               <string>Низкий </string>
@@ -242,6 +251,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_19">
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -446,6 +458,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_20">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
             <item>
              <property name="text">
               <string>Низкий</string>
@@ -481,6 +496,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_21">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
             <item>
              <property name="text">
               <string>Низкий</string>
@@ -605,6 +623,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_11">
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -645,6 +666,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_22">
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -685,6 +709,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_23">
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -725,6 +752,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_24">
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -760,6 +790,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_25">
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -884,6 +917,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_15">
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -924,6 +960,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_26">
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
             <item>
              <property name="text">
               <string>Очень низкий</string>
@@ -964,6 +1003,9 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBox_27">
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
             <item>
              <property name="text">
               <string>Очень низкий</string>

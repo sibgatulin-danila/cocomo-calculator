@@ -24,7 +24,7 @@
        <enum>QTabWidget::North</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -53,6 +53,9 @@
         </item>
         <item>
          <widget class="QComboBox" name="comboBox">
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
           <item>
            <property name="text">
             <string>распространенный тип (organic projects)</string>
@@ -60,7 +63,7 @@
           </item>
           <item>
            <property name="text">
-            <string> встроенный тип (embedded projects)</string>
+            <string>встроенный тип (embedded projects)</string>
            </property>
           </item>
           <item>

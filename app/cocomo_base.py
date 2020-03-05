@@ -29,6 +29,7 @@ class CocomoBase(QtWidgets.QMainWindow, cocomo_base.Ui_MainWindow):
 
     # функционал и связи логики с отображением
         # Выбор уровня сложности
+
         self.comboBox.currentIndexChanged.connect(self.selectDifficultLvl)
 
 
@@ -61,7 +62,7 @@ class CocomoBase(QtWidgets.QMainWindow, cocomo_base.Ui_MainWindow):
         a = self.projectType[self.difficultLevel][0]
         size = self.spinBox.value()
         b = self.projectType[self.difficultLevel][1]
-        pm = math.ceil(a * size ** b)
+        pm = round(a * size ** b, 2)
         self.label_4.setNum(pm) 
 
         # расчет времени разработки

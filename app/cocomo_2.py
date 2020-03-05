@@ -120,7 +120,7 @@ class Cocomo2(QtWidgets.QMainWindow, cocomo_2.Ui_MainWindow):
         self.pushButton_4.clicked.connect(self.prevTab)
         self.pushButton_5.clicked.connect(self.nextTab)
         
-        self.pushButton.clicked.connect(lambda : self.tabWidget.setCurrentIndex(7))
+        # self.pushButton.clicked.connect(lambda : self.tabWidget.setCurrentIndex(7))
 
         self.pushButton_6.clicked.connect(self.prevTab)
         self.pushButton_7.clicked.connect(self.nextTab)
@@ -202,24 +202,31 @@ class Cocomo2(QtWidgets.QMainWindow, cocomo_2.Ui_MainWindow):
     #pars_first
     def selectParsFirst1(self):
         self.pars_first['par_1'] = self.comboBox_8.currentIndex()
+        self.getResult()
 
     def selectParsFirst2(self):
         self.pars_first['par_2'] = self.comboBox_10.currentIndex()
+        self.getResult()
 
     def selectParsFirst3(self):
         self.pars_first['par_3'] = self.comboBox_25.currentIndex()
+        self.getResult()
 
     def selectParsFirst4(self):
         self.pars_first['par_4'] = self.comboBox_7.currentIndex()
+        self.getResult()
 
     def selectParsFirst5(self):
         self.pars_first['par_5'] = self.comboBox_9.currentIndex()
+        self.getResult()
 
     def selectParsFirst6(self):
         self.pars_first['par_6'] = self.comboBox_11.currentIndex()
+        self.getResult()
 
     def selectParsFirst7(self):
         self.pars_first['par_7'] = self.comboBox_12.currentIndex()
+        self.getResult()
 
 
     # pars_second
@@ -276,7 +283,7 @@ class Cocomo2(QtWidgets.QMainWindow, cocomo_2.Ui_MainWindow):
 
     # навигация по приложению
     def checkTabIndex(self):
-        if (self.tabWidget.currentIndex() == 7):
+        if (self.tabWidget.currentIndex() == 7 or self.tabWidget.currentIndex() == 2):
                 self.getResult()
 
     def nextTab(self):
@@ -303,10 +310,10 @@ class Cocomo2(QtWidgets.QMainWindow, cocomo_2.Ui_MainWindow):
             eaf_2 *= self.MT_SECOND[i][self.pars_second['par_' + str(i + 1)]]
         
         # трудоёмкость
-        pm_1 = math.ceil(eaf_1 * self.A_1 * size ** e)
-        self.label_40.setText(str(pm_1))
+        pm_1 = round(eaf_1 * self.A_1 * size ** e, 2)
+        self.label_63.setText(str(pm_1))
 
-        pm_2 = math.ceil(eaf_2 * self.A_2 * size ** e)
+        pm_2 = round(eaf_2 * self.A_2 * size ** e, 2)
         self.label_59.setText(str(pm_2))
         
         # Время
@@ -325,15 +332,15 @@ class Cocomo2(QtWidgets.QMainWindow, cocomo_2.Ui_MainWindow):
         for i in range(len(self.pars_second) - 1):
             eaf_2 *= self.MT_SECOND[i][self.pars_second['par_' + str(i + 1)]]
         
-        pm_1 = math.ceil(eaf_1 * self.A_1 * size ** e)
-        self.label_40.setText(str(pm_1))
+        pm_1 = eaf_1 * self.A_1 * size ** e
+        # self.label_40.setText(str(pm_1))
 
-        pm_2 = math.ceil(eaf_2 * self.A_2 * size ** e)
-        self.label_59.setText(str(pm_2))
+        pm_2 = eaf_2 * self.A_2 * size ** e
+        # self.label_59.setText(str(pm_2))
 
         # Время разработки
         tm_1 = round(sced_1 * self.C * pm_1 ** (self.D + 0.2 * (e - self.B)), 2)
-        self.label_57.setText(str(tm_1))
+        self.label_62.setText(str(tm_1))
         
         tm_2 = round(sced_2 * self.C * pm_2 ** (self.D + 0.2 * (e - self.B)), 2)
         self.label_53.setText(str(tm_2))

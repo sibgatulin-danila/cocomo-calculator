@@ -6,6 +6,7 @@ import viewsPy.cocomo_welcome_view as cocomo_welcome
 import cocomo_2
 import cocomo_base
 import cocomo_intermediate
+import cocomo_license
 
 
 class CocomoWelcome(QtWidgets.QMainWindow, cocomo_welcome.Ui_MainWindow):
@@ -17,17 +18,24 @@ class CocomoWelcome(QtWidgets.QMainWindow, cocomo_welcome.Ui_MainWindow):
 
         self.action_3.setCheckable(True)
         self.action_3.toggled.connect(self.isShowProgrammers)
-        # self.action_4.hide()
-        # self.action_4.triggered.connect(self.showDocument)
+        self.action.triggered.connect(self.showDocument)
         self.pushButton.clicked.connect(self.startCocomoBase)
         self.pushButton_2.clicked.connect(self.startCocomoIntermediate)
         self.pushButton_3.clicked.connect(self.startCocomo2)
 
+        self.action_4.triggered.connect(self.startLicenseWindow)
+
         self.label.hide()
 
+    def startLicenseWindow(self):
+        self.window = cocomo_license.CocomoLicense()
+        self.window.show()
+        # self.close()
+
     def showDocument(self):
-        print(os.path.abspath('app/file.pdf'))
-        os.startfile(os.path.abspath('app/file.pdf'))
+        # app_dir = sys.path[0] or os.path.dirname(os.path.realpath(sys.argv[0])) or os.getcwd()
+        app_dir = os.path.abspath(__file__)
+        os.system(os.path.join("file.pdf"))
 
     def isShowProgrammers(self):
         if (self.action_3.isChecked()):

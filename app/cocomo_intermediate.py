@@ -186,7 +186,7 @@ class CocomoIntermediate(QtWidgets.QMainWindow, cocomo_intermediate.Ui_MainWindo
             eaf *= self.product[i][self.pars['par_' + str(i + 1)]]
         
         # Расчет трудоёмкости разработки человек в месяц
-        pm = math.ceil(eaf * a * size ** b)
+        pm = round(eaf * a * size ** b, 2)
         self.label_4.setNum(pm) 
 
         # Расчет времени разработки в месяцах
