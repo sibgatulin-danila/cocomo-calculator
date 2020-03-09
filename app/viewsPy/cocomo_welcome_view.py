@@ -83,7 +83,7 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow", "Cocomo intermediate"))
         self.pushButton_3.setText(_translate("MainWindow", "Cocomo II"))
         self.label.setText(_translate("MainWindow", "Программу разработали: \n"
-"© Шанченко А., Сибгатулин Д., Томск 2020 г.\n"
+"© Шанченко А., Сибгатулин Д., 2020\n"
 "Контакты:\n"
 "email: sibgat.d.s@gmail.com"))
         self.menu.setTitle(_translate("MainWindow", "О программе"))
